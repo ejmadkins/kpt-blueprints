@@ -1,0 +1,11 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: default
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/repo.git # kpt-set: ${reposync-repo}
+    branch: dev # kpt-set: ${reposync-branch}
+    auth: none

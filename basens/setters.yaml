@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: # kpt-merge: /setters
+  name: setters
+data:
+  reposync-repo: "example"
+  reposync-branch: "example"

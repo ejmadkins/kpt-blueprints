@@ -12,3 +12,5 @@ pipeline:
       configPath: package-context.yaml
     - image: gcr.io/kpt-fn/apply-replacements:v0.1.1
       configPath: update-rolebinding.yaml
+    - image: gcr.io/kpt-fn/apply-setters:v0.2
+      configPath: setters.yaml
